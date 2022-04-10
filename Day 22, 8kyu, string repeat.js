@@ -8,3 +8,7 @@ function repeatStr (n, s) {
     }
     return repeatStr;
 }
+
+function repeatStr (n, s) {
+    return s.repeat(n);
+}
