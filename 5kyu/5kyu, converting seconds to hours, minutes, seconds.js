@@ -23,8 +23,6 @@
 
 //P - pseudocode
 
-
-
 function humanReadable (seconds) {
     //Create variables for hours, minutes, and seconds accumulation
     let hour = 0;
