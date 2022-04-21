@@ -18,5 +18,7 @@
 
 //P - pseudocode
 
-//Create two variables
-//Create a loop
+function findUniq(arr) {
+      //Return filtered an array where indexOf() === lastIndexOf()
+      return Number(arr.filter(number => arr.indexOf(number) === arr.lastIndexOf(number)).join(''))
+}
