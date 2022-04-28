@@ -21,6 +21,7 @@
 
 
 function liters(time) {
-    //Every two hours = 1
+    //Do Math.floor to get the number rounded down
+    //Divide the given time by 2 to get liters
     return Math.floor(time/2)
 }
