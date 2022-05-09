@@ -19,3 +19,12 @@ function validatePIN (pin) {
     return false;
   
 }
+
+////
+
+function validatePIN (pin) {
+    if (pin.match(/^\d+$/) && (pin.length == '4' || pin.length == '6')) {
+      return true
+    } 
+    return false
+}
