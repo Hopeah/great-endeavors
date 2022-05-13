@@ -24,10 +24,13 @@
 // function arrayDiff(a, b) {
 //     //create new empty array
 //     let arrayUnique = []
+//     if (b.length === 0) {
+//       return a
+//     } 
 //     //loop through first array to check for first value in b
-//     for (let i = 0; i < a.lenght; i++) {
+//     for (let i = 0; i < a.length; i++) {
 //         //nest loop through b if needed
-//         for (let y = 0; i < b.length; y++) {
+//         for (let y = 0; y < b.length; y++) {
 //             //remove value if present in both
 //             if (a[i] !== b[y]) {
 //                 arrayUnique.push(a[i])
@@ -38,16 +41,22 @@
 //     return arrayUnique
 // }
 
-function arrayDiff(a, b) {
-    let newArr = []
-    //loop through b
-    for (let i = 0; i < b.length; i++) {
-        //filter a to not include a value that we are looping through in b
-        if (a.includes(b[i]) === 'true') {
-            newArr = a.filter(number => number !== b[i])
-        }
-    }
-    //filter a to not include a value that we are looping through in b
-    //return new array
-    return newArr
+// function arrayDiff(a, b) {
+//     let newArr = []
+//     //loop through b
+//     for (let i = 0; i < b.length; i++) {
+//         //filter a to not include a value that we are looping through in b
+//         if (a.includes(b[i]) === 'true') {
+//             newArr = a.filter(number => number !== b[i])
+//         }
+//     }
+//     //filter a to not include a value that we are looping through in b
+//     //return new array
+//     return newArr
+// }
+
+function array_diff(a, b) {
+    //filter a 
+    //parameter to filter will be b NOT including a number from a
+    return a.filter(number => !b.include(number))
 }
