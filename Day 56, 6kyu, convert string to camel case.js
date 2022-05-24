@@ -19,4 +19,16 @@
 //P - pseudocode
 
 //check if the string includes - or _
-//
+
+
+function toCamelCase(str) {
+    //check if the string includes - or _
+    if (str.includes('-')) {
+        //break the string into an array using either - or _ separator
+        //Use reduce to get a new string
+        return str.split('-').reduce((p, c) => p + c[0].toUpperCase() + c.slice(1))
+    } else if (str.includes('_')) {
+        return str.split('_').reduce((p, c) => p + c[0].toUpperCase() + c.slice(1))
+    }
+    return ''
+}
