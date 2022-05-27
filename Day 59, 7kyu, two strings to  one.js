@@ -17,10 +17,6 @@
 
 //P - pseudocode
 
-
-
-
-
 function longest(s1, s2) {
     //Create an array into which we will place new letters
     let longestString = [];
