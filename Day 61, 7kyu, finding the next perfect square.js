@@ -31,3 +31,7 @@ function findNextSquare(sq) {
     //If it is not, return -1
     return -1;
 }
+
+function findNextSquare(sq) {
+    return Math.sqrt(sq)%1? -1 : Math.pow(Math.sqrt(sq)+1,2);
+}
