@@ -55,3 +55,19 @@ function findEvenIndex(arr) {
     //Return i if found where they are equal, -1 otherwise
     return -1
 }
+
+//Failed test case:
+
+// The array was: [20,10,-80,10,10,15,35] : expected -1 to equal 0
+
+function findEvenIndex(arr) {
+    let index = -1;
+    for (let i = 0; i < arr.length; i++) {
+      let start = arr.slice(0, i+1).reduce((a, b) => a + b, 0);
+      let end = arr.slice(i).reduce((a, b) => a + b, 0)
+      if (start === end) {
+        index = i
+      }
+    }
+    return index;
+}
