@@ -22,3 +22,8 @@ function findUniq(arr) {
       //Return filtered an array where indexOf() === lastIndexOf()
       return Number(arr.filter(number => arr.indexOf(number) === arr.lastIndexOf(number)).join(''))
 }
+
+function findUniq(arr) {
+    arr.sort((a,b)=>a-b);
+    return arr[0]==arr[1]?arr.pop():arr[0]
+}
