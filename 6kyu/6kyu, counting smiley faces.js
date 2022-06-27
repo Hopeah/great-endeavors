@@ -53,3 +53,7 @@ function countSmileys(arr) {
     //return the length of the new array
     return smileys.length
 }
+
+function countSmileys(arr) {
+    return arr.filter(x => /^[:;][-~]?[)D]$/.test(x)).length;
+}
