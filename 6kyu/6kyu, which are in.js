@@ -42,3 +42,9 @@ function inArray(array1,array2){
       //Return the new array
       return substrings.sort()
 }
+
+function inArray(array1,array2){
+    return array1
+      .filter(a1 => array2.find(a2 => a2.match(a1)))
+      .sort()
+}
