@@ -22,3 +22,11 @@ function DNAtoRNA(dna) {
     //Convert to array, map every occurance of Ts to Us, join the array
     return dna.split('').map(base => base === 'T' ? 'U' : base).join('')
 }
+
+function DNAtoRNA(dna) {
+    return dna.split("T").join("U");
+}
+
+function DNAtoRNA(dna){
+    return dna.replace(/T/g, 'U');
+}
