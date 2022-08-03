@@ -19,6 +19,7 @@
 
 //P - pseudocode
 
+//Doesn't work?
 function solution(input, markers) {
      //Split the given input string into an array with a new line separator
      let arr = input.split('\n')
@@ -36,17 +37,9 @@ function solution(input, markers) {
 };
 
 function solution(input, markers) {
-    //Split the given input string into an array with a new line separator
-    let arr = input.split('\n')
-    //Check each market with a for loop
-    for (let i = 0; i < markers.length; i++) {
-        //Per each marker, map the split input array to 1) if a string contains a marker -> sliced string, 2) if it doesn't contain the marker -> replace the trailing whitespaces 
-        arr = arr.map(function(line) {
-            const index = line.indexOf(markers[i])
-            if (index !== 1) return line.substring(0, index)
-            else return line.replace(/\s*$/, '')
-        })
-    }
-    //Return the joined array (using new line separator again), trim all the trailing whitespaces
-    return arr.join('\n').trim()
-};
+    return input.split('\n').map(
+      line => markers.reduce(
+        (line, marker) => line.split(marker)[0].trim(), line
+      )
+    ).join('\n')
+}
