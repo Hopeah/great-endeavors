@@ -48,7 +48,7 @@ function sumDigPow(a, b) {
 function sumDigPow(a, b) {
     var ans = [];
     while(a <= b){
-      if(a.toString().split('').reduce((x,y,i)=>x + +y ** (i + 1),0) == a)
+      if(a.toString().split('').reduce((x,y,i)=>x + +(y ** (i + 1)),0) == a) // should be ((x,y,i)=>x + +y ** (i + 1),0) but VSCode throwing an error
         ans.push(a);
       a++;
     }
