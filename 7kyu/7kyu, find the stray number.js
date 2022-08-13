@@ -19,8 +19,8 @@
 //P - pseudocode
 
 function stray(numbers) {
-    //Return a filtered array where the array is filtered by indexOf === lastIndexOf
-    numbers.filter(integer => numbers.indexOf(integer) === numbers.lastIndexOf(integer))
-    return numbers[0]
+      //Return a filtered array where the array is filtered by indexOf === lastIndexOf
+      const stray = numbers.filter(integer => numbers.indexOf(integer) === numbers.lastIndexOf(integer))
+      return stray[0]
 }
 
