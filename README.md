@@ -10,7 +10,6 @@ A repository that contains solutions to challenges (katas) on CodeWars.
 Solving a kata has been a part of my morning routine since the beginning of spring 2022, it gets my brain working and serves as a perfect way to start the day!
 
 ## Optimizations
-*(optional)*
 
 Whenever there is time, I like to go over some of the challenges and try to refactor using new techniques and methods I have learned.
 
