@@ -1,4 +1,4 @@
-# CodeWars Challenges 
+# CodeWars Challenges [x](https://www.codewars.com/users/PessimisticHope)
 A repository that contains solutions to challenges (katas) on CodeWars. 
 
 ![alt tag](https://github.com/Hopeah/great-endeavors/blob/master/codewars.PNG)
