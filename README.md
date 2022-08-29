@@ -5,7 +5,7 @@ A repository that contains solutions to challenges (katas) on CodeWars.
 
 ## How It's Made:
 
-**Tech used:** JavaScript
+**Tech used:** ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
 Solving a kata has been a part of my morning routine since the beginning of spring 2022, it gets my brain working and serves as a perfect way to start the day!
 
