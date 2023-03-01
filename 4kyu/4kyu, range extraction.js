@@ -23,9 +23,7 @@ function solution(list){
     let arr = []
     //Create two variables (set them equal to each other from the start), start and end, and set them equal to the first integer from the list
     let start = end = list[0]
-    //Go through the entire list starting from the second integer
-    list.shift()
-    for (let i = 0; i <= list.length; i++) {
+    for (let i = 1; i <= list.length; i++) {
         //If the integer in the list does NOT equal to the end+1:
         if (list[i] !== end+1) {
             //If end variable still equals start variable, append the start variable to the array

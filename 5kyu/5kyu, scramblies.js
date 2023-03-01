@@ -27,8 +27,7 @@ function scramble(str1, str2) {
     }
     //Create a function that will sort the strings in to objects by letter: repeat amount
     function getCharFrequencies(str) {
-        return str.split('').reduce(
-            function(container, letter) {
+        return str.split('').reduce((container, letter) => {
                 (container[letter] += 1) || (container[letter] = 1);
                 return container
             }, {}
